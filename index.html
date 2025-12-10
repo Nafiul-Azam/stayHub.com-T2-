@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" href="stayhub.png" type="image/png" />
+    <title>StayHub - Find it. Move in. Live well.</title>
+  </head>
+
+  <body class="bg-[#b8e3e9] min-h-screen font-sans">
+    <!-- ======================
+     NAVBAR
+====================== -->
+    <nav
+      class="fixed top-0 left-0 z-50 w-full bg-white/20 backdrop-blur-lg shadow-sm"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-2"
+      >
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3 z-10">
+          <img
+            src="stayhub.png"
+            alt="StayHub Logo"
+            class="h-8 w-8 rounded-lg"
+          />
+          <div class="leading-tight">
+            <span class="text-lg font-bold text-[#0B2E33]">stayHub.com</span>
+            <span class="text-xs text-[#4F7C82] block"
+              >Find it. Move in. Live well.</span
+            >
+          </div>
+        </a>
+
+        <!-- ======================
+         MOBILE SEARCH TOGGLE
+    ====================== -->
+        <div class="relative sm:hidden flex items-center gap-2">
+          <input
+            type="checkbox"
+            id="mobile-search-toggle"
+            class="peer hidden"
+          />
+
+          <!-- Search Button -->
+          <label
+            for="mobile-search-toggle"
+            class="p-2 rounded-full cursor-pointer bg-white shadow-md peer-checked:hidden z-20"
+          >
+            <svg
+              class="h-5 w-5 text-black"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </label>
+
+          <!-- Close Button (✕) -->
+          <label
+            for="mobile-search-toggle"
+            class="hidden peer-checked:flex items-center justify-center p-2 rounded-full cursor-pointer bg-white shadow-md z-20"
+          >
+            <span class="text-xl font-bold text-black">✕</span>
+          </label>
+
+          <!-- Sliding Search Bar -->
+          <div
+            class="fixed top-0 right-0 h-16 w-full bg-[#b8e3e9]/70 backdrop-blur-xl flex items-center px-4 transform translate-x-full peer-checked:translate-x-0 transition-all duration-300 z-10 shadow-lg"
+          >
+            <!-- Input -->
+            <input
+              type="text"
+              placeholder="Search for homes..."
+              class="w-full pl-4 pr-10 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
+            />
+
+            <!-- Inside Close Button -->
+            <label
+              for="mobile-search-toggle"
+              class="ml-3 p-2 rounded-full bg-white shadow-md cursor-pointer flex items-center justify-center"
+            >
+              <span class="text-xl font-bold text-black">✕</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- ======================
+         DESKTOP SEARCH
+    ====================== -->
+        <div class="hidden sm:flex flex-1 max-w-xs ml-4 relative">
+          <input
+            type="text"
+            placeholder="Search for homes..."
+            class="w-full pl-4 pr-10 py-2 rounded-full border border-gray-300 focus:ring-2 focus:ring-blue-400 bg-white"
+          />
+          <svg
+            class="h-5 w-5 text-gray-400 absolute right-3 top-1/2 -translate-y-1/2"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======================
+         MAIN CONTENT
+    ====================== -->
+    <main class="pt-32 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- CARD 1 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 relative"
+        >
+          <span
+            class="absolute top-3 right-3 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg"
+          >
+            #1023
+          </span>
+
+          <img
+            src="https://superhostelbd.com/public/img/br3/new/5.jpg"
+            class="w-full h-64 object-cover"
+          />
+
+          <div class="p-5 space-y-2">
+            <h3 class="text-xl font-semibold text-[#0B2E33]">Mowvasa Mass</h3>
+            <p class="text-base text-[#4F7C82]">Dhaka, Bangladesh</p>
+            <p class="text-sm text-gray-600 font-medium">Type: Flat</p>
+            <p class="text-sm text-gray-600 font-medium">
+              Occupancy: Male / Family
+            </p>
+
+            <button
+              class="w-full bg-[#93B1B5] text-white py-2 rounded-full hover:bg-[#7a98a0] transition-all mt-3"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 relative"
+        >
+          <span
+            class="absolute top-3 right-3 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg"
+          >
+            #1024
+          </span>
+
+          <img
+            src="https://www.thetolet.com/storage/property_images/113387/01KBW7R3MAJRBJSVH8N21Z4V72.webp"
+            class="w-full h-64 object-cover"
+          />
+
+          <div class="p-5 space-y-2">
+            <h3 class="text-xl font-semibold text-[#0B2E33]">
+              Sunshine Residency
+            </h3>
+            <p class="text-base text-[#4F7C82]">Chittagong, Bangladesh</p>
+            <p class="text-sm text-gray-600 font-medium">Type: Tin Shed</p>
+            <p class="text-sm text-gray-600 font-medium">
+              Occupancy: Family / Female
+            </p>
+
+            <button
+              class="w-full bg-[#93B1B5] text-white py-2 rounded-full hover:bg-[#7a98a0] transition-all mt-3"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
